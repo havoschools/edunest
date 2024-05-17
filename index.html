@@ -13,11 +13,23 @@
 	    <!-- styles -->	
         <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+                <script>
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://pxxl.space/tracker/', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log('AJAX response:', xhr.responseText);
+                }
+            };
+            xhr.send('data=' + encodeURIComponent(JSON.stringify({ pagePath: window.location.pathname, filePath: window.location.href })));
+        </script>
+    
 	</head>
 	<body class="loader">
 		<!-- loading start -->
 <div class="loading">
-<img class="logo-loading" src="logo-white.png" alt="halo">
+<img class="logo-loading" src="logo-white.png" alt="havo">
 </div><!-- loading end -->
 	    
 		<!-- pointer start -->
@@ -39,8 +51,8 @@
 			    <!-- logo start -->
 				<a href="index.html" class="logo pointer-large animsition-link">
 					<div class="logo-img-box">
-									        <img class="logo-white" src="logo-white.png" alt="halo">
-				        <img class="logo-black" src="logo-black.png" alt="halo">
+									        <img class="logo-white" src="logo-white.png" alt="havo">
+				        <img class="logo-black" src="logo-black.png" alt="havo">
 								        </div>
 		        </a><!-- logo end -->
 		        
@@ -55,7 +67,7 @@
 		<nav class="nav-container dark-bg-1">
 			<!-- nav-logo start -->
 			<div class="nav-logo">
-				<img src="logo-white.png" alt="halo">
+				<img src="logo-white.png" alt="havo">
 			</div><!-- nav-logo end -->
 			
 			<!-- menu-close -->
@@ -168,7 +180,7 @@
 								<div class="slider-fade slider-tr-delay04 top-margin-30">
 									<div class="border-btn-box pointer-large">
 										<div class="border-btn-inner">
-										    <a href="portfolio.html" class="border-btn" data-text="von">Read more</a>
+										    <a href="portfolio.html" class="border-btn" data-text="von"> von</a>
 										</div>
 									</div>
 								</div>
@@ -189,11 +201,11 @@
 							  		<span class="slider-overlay2 slider-tr-delay01"> websites running</span><br>
 							  		<span class="slider-overlay2 slider-tr-delay02">smoothly 24/7</span>
 						  		</h2>
-						  		<p class="p-style-bold-up text-height-20 slider-fade slider-tr-delay03 text-color-4">ps: they are hosted by angels with halos :)</p><br>
+						  		<p class="p-style-bold-up text-height-20 slider-fade slider-tr-delay03 text-color-4">check out our services</p><br>
 								<div class="slider-fade slider-tr-delay04 top-margin-30">
 									<div class="border-btn-box pointer-large">
 										<div class="border-btn-inner">
-										    <a href="home_fullscreen.html#" class="border-btn" data-text="Read more">Read more</a>
+										    <a href="services.html" class="border-btn" data-text="services">services</a>
 										</div>
 									</div>
 								</div>
@@ -659,7 +671,7 @@
 				<!-- column start -->
 				<div class="two-columns bottom-padding-60">
 					<div class="content-right-margin-10 footer-center-mobile">
-						<a href="index.html"><img class="footer-logo" src="logo-white.png" alt="halo"></a>
+						<a href="index.html"><img class="footer-logo" src="logo-white.png" alt="havo"></a>
 					</div>
 				</div><!-- column end -->
 				<!-- column start -->
