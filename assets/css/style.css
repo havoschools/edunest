@@ -2062,6 +2062,7 @@ body.out .nav-container.active .nav-logo img {
 	        transition-delay: 0s;
 }
 
+
 /* 5.2. Navigation close icon */
 .menu-close {
 	position: absolute;
@@ -2069,6 +2070,10 @@ body.out .nav-container.active .nav-logo img {
 	right: 40px;
 	width: 40px;
 	height: 22px;
+	margin: 40px;
+	-webkit-transform-origin: right;
+	-ms-transform-origin: right;
+		transform-origin: right;
 	z-index: 3;
 	-webkit-transition: .5s cubic-bezier(.767, .01, .18, 1.01);
 		-o-transition: .5s cubic-bezier(.767, .01, .18, 1.01);
