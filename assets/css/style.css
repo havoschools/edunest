@@ -1813,7 +1813,7 @@ body.active .logo img {
 .menu-open {
 	width: 40px;
 	height: 22px;
-	margin: 20px 40px 0 0;
+	margin: 50px 40px 0 0;
 	-webkit-transform-origin: right;
 	    -ms-transform-origin: right;
 	        transform-origin: right;
@@ -1971,7 +1971,7 @@ body.active .menu-open:before {
 	}
 	
 	.menu-open {
-		margin: 20px 20px 0 0;
+		margin: 50px 40px 0 0;
 	}	
 	
 }
@@ -1983,7 +1983,7 @@ body.active .menu-open:before {
 	}
 	
 	.menu-open {
-		margin: 10px 10px 0 0;
+		margin: 50px 40px 0 0;
 	}
 
 }
@@ -2950,7 +2950,7 @@ body.out .nav-container.active .dropdown-close.active {
 	}
 
 	.menu-close {
-		right: 20px;
+		right: 50px 40px	;
 	}
 	
 	.dropdown-close-box {
